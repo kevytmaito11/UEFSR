@@ -106,7 +106,7 @@ void FFSRViewExtension::BeginRenderViewFamily(FSceneViewFamily& InViewFamily)
 	}
 }
 
-void FFSRViewExtension::PreRenderView_RenderThread(FRHICommandListImmediate& RHICmdList, FSceneView& InView)
+void FFSRViewExtension::PreRenderView_RenderThread(FRDGBuilder& GraphBuilder, FSceneView& InView)
 {
 	if (CVarEnableFSR.GetValueOnAnyThread() > 0)
 	{

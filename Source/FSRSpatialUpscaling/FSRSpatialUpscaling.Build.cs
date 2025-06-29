@@ -37,7 +37,8 @@ public class FSRSpatialUpscaling : ModuleRules
 			new string[] {
 				// ... add other private include paths required here ...
 				EngineDirectory + "/Source/Runtime/Renderer/Private",
-			}
+                EngineDirectory + "/Source/Runtime/Renderer/Internal",
+            }
 			);
 
 		PublicDependencyModuleNames.AddRange(

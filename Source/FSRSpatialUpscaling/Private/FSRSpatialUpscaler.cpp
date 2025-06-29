@@ -38,7 +38,7 @@
 		Subpass->step(GraphBuilder, View, PassInputs); \
 	}
 
-DECLARE_GPU_STAT(FidelityFXSuperResolutionPass)
+DECLARE_GPU_STAT(FidelityFXSuperResolutionPass);
 
 FFSRSpatialUpscaler::FFSRSpatialUpscaler(EFSRMode InMode, TArray<TSharedPtr<FFSRData>> InViewData)
 	: Mode(InMode)

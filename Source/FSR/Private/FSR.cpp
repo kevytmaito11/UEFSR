@@ -63,7 +63,7 @@ void FFSRModule::StartupModule()
 #endif
 	{
 #if ENGINE_MAJOR_VERSION >= 5
-		GEngine->LoadBlueNoiseTexture();
+		GEngine->LoadBlueNoiseTexture(true);
 #else
 		LoadEngineTexture(GEngine->BlueNoiseTexture, *GEngine->BlueNoiseTextureName.ToString());
 #endif

@@ -35,8 +35,8 @@
 #define FSR_ST2084 2
 #define FSR_scRGB  3
 
-#include "/Engine/Private/ACES.ush"
-#include "/Engine/Private/GammaCorrectionCommon.ush"
+#include "ACES.ush"
+#include "GammaCorrectionCommon.ush"
 
 float4 LinearToGamma2(float4 Color) { return sqrt(Color); }
 float3 LinearToGamma2(float3 Color) { return sqrt(Color); }
